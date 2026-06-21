@@ -38,8 +38,8 @@ Le modèle suit la structure encodeur-décodeur de la Figure 1 du papier :
 ## Installation
 
 ```bash
-git clone <url-du-repo>
-cd <nom-du-repo>
+git clone <https://github.com/Gbelsalvador/transformer.git>
+cd <transformer>
 pip install torch tokenizers
 ```
 

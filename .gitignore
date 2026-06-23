@@ -1,0 +1,5 @@
+data/
+checkpoint.pt
+lingala.csv
+tokenizer.json
+__pycache__/

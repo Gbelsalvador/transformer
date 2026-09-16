@@ -52,7 +52,9 @@ def train_bpe_tokenizer(files, vocab_size=37000, save_path="tokenizer.json"):
 
 
 def load_tokenizer(path="tokenizer.json"):
-    return Tokenizer.from_file(path)
+    # ``tokenizers`` attend une chaîne de caractères ; sous Windows un objet
+    # pathlib.Path ne peut pas être converti automatiquement par l'extension Rust.
+    return Tokenizer.from_file(str(path))
 
 
 def encode_sentence(tokenizer, sentence, add_sos_eos=True):

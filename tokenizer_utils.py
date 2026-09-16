@@ -71,12 +71,12 @@ def decode_ids(tokenizer, ids, skip_special_tokens=True):
 if __name__ == "__main__":
     # Exemple : entraîner un tokenizer partagé sur un petit corpus EN-DE
     tok = train_bpe_tokenizer(
-        files=["test_data/train.en", "test_data/train.de"],
-        vocab_size=300,  # petit pour le test, 37000 en conditions réelles
+        files=["data/train.fr", "data/train.ln"],
+        vocab_size=3000,  # petit pour le test, 37000 en conditions réelles
         save_path="test_data/tokenizer.json",
     )
 
-    example = "the cat sat on the mat"
+    example = "boza malamu ba ninga na nga ?"
     ids = encode_sentence(tok, example)
     print("Phrase :", example)
     print("IDs    :", ids)

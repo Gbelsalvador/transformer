@@ -1,0 +1,14 @@
+.git/
+.agents/
+.codex/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+data/
+lingala.csv
+README.md
+DEPLOIEMENT.md

@@ -1,0 +1,6 @@
+# Dépendances nécessaires pour exécuter l'API de traduction (CPU).
+--extra-index-url https://download.pytorch.org/whl/cpu
+fastapi==0.115.12
+tokenizers==0.21.1
+torch==2.5.1+cpu
+uvicorn[standard]==0.34.0
